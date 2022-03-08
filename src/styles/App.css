@@ -1,0 +1,100 @@
+:root {
+  --background-body: #292929;
+  --background-content: #1D1D1D;
+  --text-color: #E5E5E5;
+  --primary-color: #4DFF7C;
+  --second-color: #89DDFF;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-body);
+  color: var(--text-color);
+}
+
+header.header {
+  position: fixed;
+  width: 100%;
+  height: 3.5rem;
+  top: 0px;
+  left: 0px;
+  background-color: var(--background-content);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.header__content {
+  max-width: 1280px;
+  padding: 0 1rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 3.5rem;
+  background-color: var(--background-content);
+}
+
+.logo {
+  font-size: 20px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--text-color);
+}
+
+main.main {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 3rem;
+  margin-top: 4.5rem;
+  background-color: var(--background-content);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 3px;
+}
+
+blockquote {
+  background: rgba(77, 255, 124, 0.2);
+  border-left: 10px solid var(--primary-color);
+  margin: 1.5em 10px;
+  padding: 1em 10px .1em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+a {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+code {
+  color: var(--second-color);
+  background-color: rgba(137, 221, 255, 0.3);
+}
+
+.dark-mode-icon {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  main.main {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  main.main {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  main.main {
+    width: 90%;
+  }
+}
